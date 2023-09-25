@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Layoults</string>
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name="dont_has_cadaster_ask">Ainda não tem uma conta?</string>
+    <string name="cadastrar">Cadastre-se agora.</string>
+    <string name="esquecer_password">Esqueci minha senha</string>
+    <string name="termos">É isso ai!</string>
+    <string name="aceitar_termos">Li e aceito os termos</string>
+    <string name="email">E-mail</string>
+    <string name="nome_user">Nome Usuário</string>
+    <string name="categoria">Categoria</string>
+    <string name="nome">Nome Jogador</string>
+    <string name="descricao">Habilidades</string>
+</resources>

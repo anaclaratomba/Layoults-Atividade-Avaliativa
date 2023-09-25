@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary2"
+    android:paddingHorizontal="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_login_tile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_user_emoji"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/text_login_tile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_user_emoji" />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/image_user_emoji"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:hint="@string/email"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edit_email"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:hint="@string/password"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_password"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/primary3"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:id="@+id/text_ask_cadaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:layout_marginTop="25dp"
+        android:text="@string/dont_has_cadaster_ask"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/text_cadaster_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/text_ask_cadaster"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/text_ask_cadaster"
+        android:text="@string/cadastrar"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/text_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_cadaster_now"
+        android:layout_marginTop="25dp"
+        android:text="@string/esquecer_password"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_terms"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/text_forget_password"
+        android:layout_marginVertical="7dp"
+        android:background="@color/primary3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/text_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_cadaster_now"
+                android:layout_marginTop="25dp"
+                android:text="@string/termos"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll_terms"
+        android:text="@string/aceitar_termos"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
